@@ -1,62 +1,97 @@
 FLUTTER AI APP
+=============
 
-Features:
-- Authentication
-  * Email/Password Sign In
-  * Email/Password Registration
-  * Profile Management (Edit Profile, Change Password)
-  * Profile Picture Upload
+A modern Flutter application integrating AI capabilities with Firebase authentication and Imgur image processing.
 
-- Image Integration
-  * Image Upload via Imgur API
-  * Image Processing
+FEATURES
+--------
 
-Architecture:
-- Feature-first Architecture
-  * auth/
-    - views/
-    - models/
-    - providers/
-  * home/
-    - views/
-    - providers/
-  * common/
-    - widgets/
-    - utils/
+[Authentication]
+* Email & Password Sign In/Registration
+* Profile Management
+  - Edit Profile Information
+  - Change Password
+  - Profile Picture Upload
+  - Account Deletion
 
-Technologies:
-1. Backend & Authentication
-   - Firebase Authentication
-   - Firebase Core
+[AI Feature]
+* Facebook BlenderBot for Conversation
+* Image Analysis Vision Transformer
 
-2. State Management
-   - Riverpod
-   - Provider Pattern
+ARCHITECTURE
+-----------
 
-3. Navigation
-   - Go Router
+![Screenshot 2025-03-09 at 04 38 02](https://github.com/user-attachments/assets/857e44d7-3834-4f6a-9ae6-99716db1d301)
 
-4. Image Processing
-   - Imgur API Integration
-   - Image Picker
+TECHNOLOGIES
+-----------
 
-5. UI Components
-   - Custom Buttons
-   - Custom Text Fields
-   - Custom Bottom Sheets
-   - Responsive Design
+[Backend & Authentication]
+* Firebase Authentication
+* Firebase Core
 
-Dependencies:
-- flutter_riverpod
-- go_router
-- firebase_auth
-- firebase_core
-- image_picker
+[State Management]
+* Riverpod
+* Provider Pattern
 
-Development Setup:
-1. Flutter SDK
-2. Firebase Project Setup
-3. Imgur API Key
-4. Android Studio / VS Code
+[Navigation]
+* Go Router
 
-Note: This is a base template and can be modified according to future requirements.
+[Image Processing]
+* Imgur API Integration
+* Image Picker
+
+[UI Components]
+* Custom Buttons
+* Custom Text Fields
+* Custom Bottom Sheets
+
+DEPENDENCIES
+-----------
+* flutter_riverpod
+* go_router
+* firebase_auth
+* firebase_core
+* image_picker
+
+GETTING STARTED
+--------------
+
+1. Prerequisites
+   - Flutter SDK
+   - Android Studio or VS Code
+   - Git
+
+2. Environment Setup
+   $ git clone <repository-url>
+   $ flutter pub get
+
+3. Configuration
+   - Set up Firebase project
+   - Configure Imgur API credentials
+   - Update environment variables
+
+4. Run the app
+   $ flutter run
+
+SCREENSHOTS
+----------
+| Image  | Desc |
+| ------------- | ------------- |
+| ![Screenshot_2025-03-09-04-38-27-426_com example flutter_ai](https://github.com/user-attachments/assets/52ef10d2-3990-4e4d-ad2c-16c0b03d7e80) | Home |
+| ![Screenshot_2025-03-09-04-43-42-562_com example flutter_ai](https://github.com/user-attachments/assets/8f5ac2ae-5c46-485c-beb7-ec1d91fad72a) | Chat |
+| ![Screenshot_2025-03-09-04-44-06-655_com example flutter_ai](https://github.com/user-attachments/assets/1cc07b64-a44f-4611-9d8d-03bb76e031dc) | Image Analysis |
+| ![Screenshot_2025-03-09-04-39-55-048_com example flutter_ai](https://github.com/user-attachments/assets/e54a7453-26c1-4329-bd9b-0e27f31cc50d) | Register |
+| ![Screenshot_2025-03-09-04-39-52-702_com example flutter_ai](https://github.com/user-attachments/assets/cedc692b-ea65-4566-a88b-f58faed2bf78) | Login |
+| ![Screenshot_2025-03-09-04-39-21-926_com example flutter_ai](https://github.com/user-attachments/assets/d383258c-28ef-445a-a873-b2e399941d3b) | Profile Tab |
+| ![Screenshot_2025-03-09-04-39-40-601_com example flutter_ai](https://github.com/user-attachments/assets/ed71cf58-d21c-44ee-b407-bbb89ff01736) | Edit Profile |
+| ![Screenshot_2025-03-09-04-39-47-273_com example flutter_ai](https://github.com/user-attachments/assets/9cf8e5e2-6c0b-41f7-87ce-00c6ae364739) | Delete Account |
+
+
+CONTRIBUTING
+-----------
+Contributions, issues, and feature requests are welcome!
+
+LICENSE
+-------
+This project is licensed under the MIT License - see the LICENSE file for details.
