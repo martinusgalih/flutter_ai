@@ -46,6 +46,35 @@ TECHNOLOGIES
 * Custom Text Fields
 * Custom Bottom Sheets
 
+ARCHITECTURE AND DESIGN DECISION
+-----------
+* Simple Feature-First Architecture help me to create MVP product and not implemented clean architecture (which is scalable) made development faster (since working by myself)
+* Riverpod for simple state management
+* I realy reccommending using simple architecture with scalable and separation concern to keep project clean and maintanable to achieve MVP
+
+HOW THE APP WORKS
+-----------
+1. Authentication Flow:
+   * User starts at Login/Register screen
+   * After successful authentication, user data is stored in UserProvider
+   * Protected routes become accessible
+   * Profile management allows users to update their information
+
+2. AI Integration Flow:
+   * User can initiate chat conversations using Facebook's/Meta's BlenderBot
+   * Image analysis
+   * You need API key from hugging face to use this feature (I using free tier)
+
+3. State Management:
+   * Riverpod manages global application state
+   * Providers handle specific feature states
+   * AsyncValue for loading and error states
+
+4. Data Flow:
+   * User actions trigger provider state changes
+   * Providers communicate with external services (Firebase, Imgur, AI models)
+   * UI updates automatically through provider state changes
+
 DEPENDENCIES
 -----------
 * flutter_riverpod
