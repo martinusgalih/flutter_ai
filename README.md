@@ -1,16 +1,62 @@
-# flutter_ai
+FLUTTER AI APP
 
-A new Flutter project.
+Features:
+- Authentication
+  * Email/Password Sign In
+  * Email/Password Registration
+  * Profile Management (Edit Profile, Change Password)
+  * Profile Picture Upload
 
-## Getting Started
+- Image Integration
+  * Image Upload via Imgur API
+  * Image Processing
 
-This project is a starting point for a Flutter application.
+Architecture:
+- Feature-first Architecture
+  * auth/
+    - views/
+    - models/
+    - providers/
+  * home/
+    - views/
+    - providers/
+  * common/
+    - widgets/
+    - utils/
 
-A few resources to get you started if this is your first Flutter project:
+Technologies:
+1. Backend & Authentication
+   - Firebase Authentication
+   - Firebase Core
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+2. State Management
+   - Riverpod
+   - Provider Pattern
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. Navigation
+   - Go Router
+
+4. Image Processing
+   - Imgur API Integration
+   - Image Picker
+
+5. UI Components
+   - Custom Buttons
+   - Custom Text Fields
+   - Custom Bottom Sheets
+   - Responsive Design
+
+Dependencies:
+- flutter_riverpod
+- go_router
+- firebase_auth
+- firebase_core
+- image_picker
+
+Development Setup:
+1. Flutter SDK
+2. Firebase Project Setup
+3. Imgur API Key
+4. Android Studio / VS Code
+
+Note: This is a base template and can be modified according to future requirements.
